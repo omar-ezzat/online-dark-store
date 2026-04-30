@@ -54,6 +54,13 @@ src/ │ ├── components/ │   ├── Navbar.jsx │   ├── Produc
 ---
 
 
+## deployment
+  the project is deployed using vercel
+  https://online-dark-store.vercel.app/
+
+---
+
+
 ## ⚙️ Installation & Setup
 
 
@@ -72,24 +79,6 @@ bash npm install
 4. Run the development server:
 bash npm run dev 
 
-
----
-
-
-## 📸 Screenshots
-(You can add screenshots here later)
-
-
----
-
-
-## 🎯 Learning Objectives
-This project helped in:
-- Understanding React component structure
-- Working with APIs in React
-- Using Material UI effectively
-- Building responsive layouts
-- Handling UI edge cases (text overflow, card alignment, etc.)
 
 
 ---
