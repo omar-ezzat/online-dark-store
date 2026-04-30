@@ -57,12 +57,12 @@ const ProductCarousel = () => {
                         flexDirection: { xs: "column", md: "row" },
                     }}
                 >
-                    <Box>
+                    <Box sx={{width:"100%", overflow:"hidden"}}>
                         <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
                             Discover Amazing Products
                         </Typography>
 
-                        <Typography variant="h6" sx={{ color: "#ccc", mb: 2, maxWidth:{xs:"400px", md:"500px"}, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>
+                        <Typography variant="h6" sx={{ color: "#ccc", mb: 2, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>
                             {product.title}
                         </Typography>
 
@@ -74,6 +74,7 @@ const ProductCarousel = () => {
                             Shop Now
                         </Button>
                     </Box>
+
 
                     <Box
                         component="img"
