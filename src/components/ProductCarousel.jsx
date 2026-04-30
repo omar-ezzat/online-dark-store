@@ -62,7 +62,7 @@ const ProductCarousel = () => {
                             Discover Amazing Products
                         </Typography>
 
-                        <Typography variant="h6" sx={{ color: "#ccc", mb: 2 }}>
+                        <Typography variant="h6" sx={{ color: "#ccc", mb: 2, maxWidth:{xs:"400px", md:"500px"}, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>
                             {product.title}
                         </Typography>
 
