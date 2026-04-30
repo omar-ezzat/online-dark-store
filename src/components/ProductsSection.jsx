@@ -38,7 +38,7 @@ const ProductsSection = () => {
 
                 <Grid container spacing={3}>
                     {products.slice(0, 8).map((product) => (
-                        <Grid item xs={12} sm={6} md={3} key={product.id}>
+                        <Grid xs={12} sm={6} md={3} key={product.id}>
                             <ProductCard product={product} />
                         </Grid>
                     ))}
