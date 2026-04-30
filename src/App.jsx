@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { Box } from "@mui/material"
-import Navbar from "./components/navbar"
+import Navbar from "./components/Navbar"
 import ProductCarousel from "./components/ProductCarousel"
 import ProductsSection from "./components/ProductsSection"
 import About from "./components/About"
