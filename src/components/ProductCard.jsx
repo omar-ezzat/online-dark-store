@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, Typography, Rating, Box } from "@mui/material";
-
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 const ProductCard = ({ product }) => {
     return (
         <>
             <Card
                 sx={{
-                    bgcolor: "#2f2f2f",
+                    bgcolor: "#212121",
                     color: "white",
                     borderRadius: 3,
                     height: "100%",
@@ -52,7 +52,8 @@ const ProductCard = ({ product }) => {
                         value={product.rating.rate}
                         precision={0.5}
                         readOnly
-                        sx={{ mt: 1 }}
+                        sx={{ mt: 1}}
+                        emptyIcon={<StarBorderIcon style={{ opacity: 1, color:"#b7b7b7" }} fontSize="inherit" />}
                     />
 
                     <Typography sx={{ mt: 1, color: "#90caf9" }}>
