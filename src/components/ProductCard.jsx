@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography, Rating } from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, Rating, Box } from "@mui/material";
 
 
 const ProductCard = ({ product }) => {
@@ -7,25 +7,37 @@ const ProductCard = ({ product }) => {
         <>
             <Card
                 sx={{
-                    bgcolor: "#1e1e1e",
+                    bgcolor: "#2f2f2f",
                     color: "white",
                     borderRadius: 3,
                     height: "100%",
-                }}
-            >
-                <CardMedia
-                    component="img"
-                    image={product.image}
-                    alt={product.title}
+                    display: "flex",
+                    flexDirection: "column",
+
+                }}>
+                <Box
                     sx={{
                         height: 220,
-                        objectFit: "contain",
                         bgcolor: "white",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                         p: 2,
-                    }}
-                />
+                    }}>
+                    <Box
+                        component="img"
+                        src={product.image}
+                        alt={product.title}
+                        sx={{
+                            maxHeight: "100%",
+                            maxWidth: "100%",
+                            objectFit: "contain",
+                        }}
+                    />
+                </Box>
 
-                <CardContent>
+
+                <CardContent >
                     <Typography
                         variant="subtitle1"
                         sx={{
